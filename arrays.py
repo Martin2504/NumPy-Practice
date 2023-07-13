@@ -20,3 +20,13 @@ print(np.full_like(a, 4))       # Replace the 0's with 4's in a.
 print(np.random.rand(4,2))
 print(np.random.randint(7, size=(3,3))) # Random int's
 print(np.random.random_sample(a.shape)) # Replace the 0's with ramdp, decimals in a. 
+
+# Identity matrix
+print(np.identity(3))
+
+# Challenge
+output = np.ones((5,5))
+z = np.zeros((3,3))
+z[1,1] = 9
+output[1:4, 1:4] = z
+print(output)
